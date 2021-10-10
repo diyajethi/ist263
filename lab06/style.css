@@ -1,0 +1,11 @@
+selector{ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+h1, h2{color:blueviolet}
+letter-spacing: 1em;
+}
+
+h1{font-size:260%;}
+h1{font-size:220%;}
+th{
+    background-color: blueviolet
+    color:cornsilk;
+}
