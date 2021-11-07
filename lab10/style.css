@@ -1,5 +1,11 @@
-nav{ background-color:#84CEEB;}
-nav a{color:#5680E9;}
+@media only screen and (min-width:768px) {
+nav{background-color: #123c69}
 nav a:hover {background-color:-#5AB9EA;}    
 nav{padding: 10px;}
 nav {margin-bottom: 30px}
+h1{text-align: center; margin: 2rem ;}
+p {margin: 2rem}
+.firstrow {display:flex; justify-content: space-evenly;}
+.otherskills{ background-color: blueviolet; color: burlywood;}
+.flexbox2 {display: flex;}
+img {max-width:100%}} 
