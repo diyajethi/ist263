@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en”>
     <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,15 +32,25 @@ border-radius:15px; flex: 25%;  padding: 1rem; margin: 2rem;}
         padding: 5px;}
         oskills{display: flex;
 padding: 5px;}
+#skip{
+            position: absolute;
+            left: -999px;
+            background-color: blueviolet;
+        }
+        #skip:focus{
+            left: 10px;
+        }
 </style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <a id="skip" href="#maincontent">Skip to content</a>
     <nav>
-        <a href="index.html">Home|</a>
-        <a href="skills.html">Skills|</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+        <a href="index.html" tabindex="1">Home</a> |
+        <a href="skills.html" tabindex="2">Skills</a> |
+        <a href="contact.html" tabindex="3">Contact</a>
+        </nav>
+    <a id="maincontent"></a>
     <div class="skillcentering">
         <h1>Technical Skills</h1>
     </div>
