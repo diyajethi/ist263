@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en”>
+    <head>
+        <meta charset="utf-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body{ background-color: burlywood;
+color:darkblue
+@media only screen and (min-width:768px)
+
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 30px;
+            line-height: 25px;
+        }
+        #skip{
+            position: absolute;
+            left: -999px;
+            background-color: blueviolet;
+        }
+        #skip:focus{
+            left: 10px;
+        }
+    </style>
+        
 <title>My name is Diya Jethi- Bio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a id="skip" href="#maincontent">Skip to content</a>
 <nav>
-    <a href="index.html">Home</a> |
-    <a href="skills.html">Skills</a> |
-    <a href="contact.html">Contact</a>
+    <a href="index.html" tabindex="1">Home</a> |
+    <a href="skills.html" tabindex="2">Skills</a> |
+    <a href="contact.html" tabindex="3">Contact</a>
 </nav>
-    <img src= "../images/diya.png" alt="Portfolio">
+<a id="maincontent"></a>
+    <img src= "../images/diya.png" alt="Learn about the best tips on travelling with me">
     
     <p>
         <main>
@@ -41,7 +65,7 @@ I am an avid fun of watching tv, here are some of my favourite shows to watch. I
 </main>
 <footer>
 <hr>
-<p class="copyright" >Always push yourself outside your comfort zone</p>
+<p class="copyright" alt=copyright >Always push yourself outside your comfort zone</p>
 <p>&copy; 2021</p>
 
 </footer>

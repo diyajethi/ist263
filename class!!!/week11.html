@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibility</title>
+    <style>
+        /* skip to content is 3 things
+        1. html link "skip to content"
+        2. you need an anchor for that link
+        3. style in css with position absolute and left to make it dissapear
+        4. bring it backby changing left value - hover psuedo class*/
+
+        #skip {
+            position:absolute;/* relative to parent container*/
+            left: -999px; /* move if off the page */
+            background-color: burlywood;
+
+        }
+        #skip:focus{
+            left: 10px; /* move our link back on screen*/
+        }
+    </style>
+</head>
+<body>
+    <a id="skip" href="maincontent">Skip to Content</a>
+    <!----> tab index is a new attribut that says what roder elements are in when using tab key to surf-->
+    <a href="index.html" tabindex="3">Home</a>
+    <a href="about.html"> tabindex="2">About</a>
+    <a href="contact.html"> tabindex="3"> contact</a>
+    <p> Lorem Ipsum</p>
+    <p></p>
+    <p></p>
+    <a id="maincontent"</a>
+    <p></p>
+    
+    
+</body>
+</html>
