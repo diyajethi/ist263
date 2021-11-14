@@ -6,6 +6,14 @@ nav {margin-bottom: 30px}
 h1{text-align: center; margin: 2rem ;}
 p {margin: 2rem}
 .firstrow {display:flex; justify-content: space-evenly;}
-.otherskills{ background-color: blueviolet; color: burlywood;}
+.otherskills{ background-color: white; color: burlywood;}
 .flexbox2 {display: flex;}
 img {max-width:100%}} 
+#skip{
+ position: absolute;
+    left: -999px;
+    background-color: lightblue;
+}
+#skip.focus{
+    left:10px;
+}
