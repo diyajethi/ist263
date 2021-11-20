@@ -14,10 +14,10 @@
 </style>
     <script>
         function WinnerMessage(){
-alert('You won!');
+document.getElementById("messages").innerHTML='You Won!';
         }
         function TryAgain(){
-alert('Wrong Shell-Try Again');
+            document.getElementById("messages").innerHTML='Wrong Shell-Try Again';
         }
 
 function ShuffleShells() {
@@ -32,6 +32,7 @@ function ShuffleShells() {
     <img src="../images/walnut.jpg" id="first" alt="first walnut" onclick="WinnerMessage();">
     <img src="../images/walnut.jpg" id="second" alt="second walnut" onclick="TryAgain();">
     <img src="../images/walnut.jpg"  id= "third" alt="third walnut" onclick="TryAgain();" >
+    <div id="messages"></div>
     </div>
     <body onload= "ShuffleShells();">
 </body>
